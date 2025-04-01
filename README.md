@@ -10,9 +10,10 @@ My goal with this project is to replicate a real-world IT helpdesk environment u
 
 - ### Steps to Install osTicket on an Azure VM
 - ####  Step 1: Deploy an Azure Virtual Machine
-<p style="text-indent: 40px;"> Open Azure and navigate to Virtual Machines.
+<p style="text-indent: 40px;"> Open Azure and navigate to Virtual Machines. 
+</p>
 
-<p style="text-indent: 40px;">Create a new Linux (Ubuntu) or Windows Server VM.
+<p style="text-indent: 40px;">Create a new Linux (Ubuntu) or Windows Server VM.</p>
 
 <p style="text-indent: 40px;">Select a Standard_B2s instance or better.
 
@@ -39,40 +40,40 @@ My goal with this project is to replicate a real-world IT helpdesk environment u
 
 <p style="text-indent: 40px;"> Move the files to the web server’s root directory.
 
-Set correct file permissions to allow execution.
+<p style="text-indent: 40px;">Set correct file permissions to allow execution.
 
 - #### Step 5: Set Up the MySQL Database
-Create a MySQL database for osTicket.
+<p style="text-indent: 40px;">Create a MySQL database for osTicket.
 
-Create a database user with the necessary privileges.
+<p style="text-indent: 40px;">Create a database user with the necessary privileges.
 
 - #### Step 6: Run the osTicket Installer
-Open a web browser and access http://your-vm-ip/osticket/setup/.
+<p style="text-indent: 40px;">Open a web browser and access http://your-vm-ip/osticket/setup/.
 
-Enter database credentials and set up an admin account.
+<p style="text-indent: 40px;">Enter database credentials and set up an admin account.
 
-Complete the installation and remove the setup directory for security.
+<p style="text-indent: 40px;">Complete the installation and remove the setup directory for security.
 
 - #### Step 7: Customize osTicket for IT Helpdesk Training
-Configure ticket categories (e.g., Hardware, Software, Network).
+<p style="text-indent: 40px;">Configure ticket categories (e.g., Hardware, Software, Network).
 
-Set up Service-Level Agreements (SLAs) to define response times.
+<p style="text-indent: 40px;">Set up Service-Level Agreements (SLAs) to define response times.
 
-Assign user roles (Admin, Technician, End User) for realistic workflows.
+<p style="text-indent: 40px;">Assign user roles (Admin, Technician, End User) for realistic workflows.
 
-Start logging and resolving test tickets to simulate real IT scenarios.
+<p style="text-indent: 40px;">Start logging and resolving test tickets to simulate real IT scenarios.
 
 - #### Step 8: Secure the System
-Configure firewall rules to restrict access.
+<p style="text-indent: 40px;">Configure firewall rules to restrict access.
 
-(Optional) Install an SSL certificate for secure access.
+<p style="text-indent: 40px;">(Optional) Install an SSL certificate for secure access.
 
 - #### Step 9: Simulate an IT Support Environment
 Submit tickets via http://your-vm-ip/osticket/.
 
-Use the Admin Panel (/scp/) to manage and resolve tickets.
+<p style="text-indent: 40px;">Use the Admin Panel (/scp/) to manage and resolve tickets.
 
-Analyze ticket history to identify recurring issues and resolution trends.
+<p style="text-indent: 40px;">Analyze ticket history to identify recurring issues and resolution trends.
 
 <h2>Environments and Technologies Used</h2>
 
