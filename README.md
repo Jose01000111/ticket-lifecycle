@@ -10,50 +10,50 @@ My goal with this project is to replicate a real-world IT helpdesk environment u
 
 - ### Steps to Install osTicket on an Azure VM
 - ####  Step 1: Deploy an Azure Virtual Machine
-Open Azure and navigate to Virtual Machines.
+<p style="text-indent: 40px;"> Open Azure and navigate to Virtual Machines.
 
-Create a new Linux (Ubuntu) or Windows Server VM.
+<p style="text-indent: 40px;">Create a new Linux (Ubuntu) or Windows Server VM.
 
-Select a Standard_B2s instance or better.
+<p style="text-indent: 40px;">Select a Standard_B2s instance or better.
 
-Enable public IP access for remote connection.
+<p style="text-indent: 40px;">Enable public IP access for remote connection.
 
-Choose SSH (Linux) or RDP (Windows) for authentication.
+<p style="text-indent: 40px;">Choose SSH (Linux) or RDP (Windows) for authentication.
 
-Deploy the VM and wait for provisioning to complete.
+<p style="text-indent: 40px;">Deploy the VM and wait for provisioning to complete.
 
-Step 2: Connect to the VM
-Linux: Use SSH to connect.
+- #### Step 2: Connect to the VM
+<p style="text-indent: 40px;">Linux: Use SSH to connect.
 
-Windows: Use Remote Desktop (RDP) to log in.
+<p style="text-indent: 40px;">Windows: Use Remote Desktop (RDP) to log in.
 
-Step 3: Install Required Software Stack
-Linux: Install Apache, MySQL, and PHP (LAMP stack).
+- #### Step 3: Install Required Software Stack
+<p style="text-indent: 40px;">Linux: Install Apache, MySQL, and PHP (LAMP stack).
 
-Windows: Install IIS, MySQL, and PHP.
+<p style="text-indent: 40px;">Windows: Install IIS, MySQL, and PHP.
 
-Verify that the web server and database are functioning correctly.
+<p style="text-indent: 40px;">Verify that the web server and database are functioning correctly.
 
-Step 4: Download and Configure osTicket
-Download the latest osTicket release.
+- #### Step 4: Download and Configure osTicket
+<p style="text-indent: 40px;"> Download the latest osTicket release.
 
-Move the files to the web server’s root directory.
+<p style="text-indent: 40px;"> Move the files to the web server’s root directory.
 
 Set correct file permissions to allow execution.
 
-Step 5: Set Up the MySQL Database
+- #### Step 5: Set Up the MySQL Database
 Create a MySQL database for osTicket.
 
 Create a database user with the necessary privileges.
 
-Step 6: Run the osTicket Installer
+- #### Step 6: Run the osTicket Installer
 Open a web browser and access http://your-vm-ip/osticket/setup/.
 
 Enter database credentials and set up an admin account.
 
 Complete the installation and remove the setup directory for security.
 
-Step 7: Customize osTicket for IT Helpdesk Training
+- #### Step 7: Customize osTicket for IT Helpdesk Training
 Configure ticket categories (e.g., Hardware, Software, Network).
 
 Set up Service-Level Agreements (SLAs) to define response times.
@@ -62,12 +62,12 @@ Assign user roles (Admin, Technician, End User) for realistic workflows.
 
 Start logging and resolving test tickets to simulate real IT scenarios.
 
-Step 8: Secure the System
+- #### Step 8: Secure the System
 Configure firewall rules to restrict access.
 
 (Optional) Install an SSL certificate for secure access.
 
-Step 9: Simulate an IT Support Environment
+- #### Step 9: Simulate an IT Support Environment
 Submit tickets via http://your-vm-ip/osticket/.
 
 Use the Admin Panel (/scp/) to manage and resolve tickets.
