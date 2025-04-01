@@ -3,13 +3,78 @@
 </p>
 
 <h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
+My goal with this project is to replicate a real-world IT helpdesk environment using osTicket on an Azure VM. I want to get hands-on with a ticketing system that IT teams actually use, practice troubleshooting workflows, SLAs, and helpdesk operations, and build confidence in handling service requests—all while preparing for the CompTIA A+ certification. At this stage, I’m not just learning concepts—I’m applying them. This setup will help me think like an IT professional, work through realistic support scenarios, and sharpen the skills I’ll need when I land my first IT role<br />
 
 
-<h2>Deploying osTicket on an Azure Virtual Machine</h2>
+<h2>Install osTicket on an Azure VM</h2>
 
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
+- ### Steps to Install osTicket on an Azure VM
+- ### Step 1: Deploy an Azure Virtual Machine
+Log into Azure and navigate to Virtual Machines.
 
+Create a Linux (Ubuntu) or Windows Server VM.
+
+Choose a Standard_B2s or better instance for smooth performance.
+
+Enable public IP access so I can reach it remotely.
+
+Select SSH (Linux) or RDP (Windows) for authentication.
+
+Deploy the VM and wait for it to spin up.
+
+Step 2: Connect to the VM
+Linux: SSH into the server.
+
+Windows: Use Remote Desktop (RDP) to connect.
+
+Step 3: Install the Required Software Stack
+For Linux: Install Apache, MySQL, PHP (LAMP stack).
+
+For Windows: Set up IIS, MySQL, and PHP.
+
+Verify that the web server and database are running properly.
+
+Step 4: Download and Configure osTicket
+Download the latest osTicket release from GitHub.
+
+Extract and move the files to the web server directory.
+
+Adjust file permissions to ensure proper functionality.
+
+Step 5: Set Up the Database
+Create a MySQL database specifically for osTicket.
+
+Create a database user and assign the necessary privileges.
+
+Step 6: Complete the osTicket Installation
+Open a browser and go to http://your-vm-ip/osticket/setup/.
+
+Enter database credentials and create an admin account.
+
+Finish the setup and remove the installation folder for security reasons.
+
+Step 7: Customize osTicket for IT Helpdesk Training
+Create ticket categories (e.g., Hardware Issues, Software Troubleshooting, Networking Problems).
+
+Set up Service-Level Agreements (SLAs) to mimic response and resolution time policies.
+
+Assign user roles (Admin, IT Technicians, End Users) to simulate real team structures.
+
+Start logging test tickets, resolving them, and documenting troubleshooting steps.
+
+Step 8: Secure and Optimize the System
+Configure firewall rules to control access to the web interface.
+
+(Optional) Implement SSL encryption for a secure, professional-grade setup.
+
+Step 9: Simulate an IT Support Workflow
+Open http://your-vm-ip/osticket/ to submit tickets and track requests.
+
+Use the Admin Panel (/scp/) to manage and resolve issues.
+
+Practice handling end-user requests, troubleshooting, and enforcing SLAs.
+
+Review ticket history to analyze problem trends and resolution efficiency.
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
